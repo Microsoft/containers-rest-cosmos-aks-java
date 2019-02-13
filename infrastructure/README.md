@@ -29,7 +29,7 @@ The values below are required as inputs to the script, please keep them in handy
 
 Another way to deploy is to run one-click deploy for all resources using Deploy to Azure:
 
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/Microsoft/containers-rest-cosmos-aks-java/infrastructure)
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/Microsoft/containers-rest-cosmos-aks-java/tree/master/infrastructure)
 
 Integrating Azure Key Vault with AKS
 Once all the resources are provisioned, it will also include Azure Key Vault Service. The Azure Key vault service enables storing secrets and allowing controlled access through service principal. Follow steps given in [AKS configuration](./AKSconfiguration.md) to configure Key vault with AKS.
