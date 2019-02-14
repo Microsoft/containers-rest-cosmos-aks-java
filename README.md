@@ -83,7 +83,7 @@ Key technologies and concepts demonstrated:
 | Common, standard technologies | <li>Java programming language<li>Spring Boot Framework, one of the most widely used frameworks for Java<li>MongoDB NoSQL API (via Azure Cosmos DB)<li>Redis Cache
 | Containerization | Microservices implemented in Docker containers, hosted by the Azure Kubernetes service.
 | CI/CD pipeline | Continuous integration/continuous delivery (CI/CD) is implemented using Azure DevOps and Gitops with a pipeline of environments that support dev, testing and production
-| Automated deployment | <li>Azure ARM templates<li>App Service for Containers<li>Azure container registry
+| Automated deployment | <li>Azure ARM templates<li>Azure Kubernetes Service<li>Azure container registry
 | High Availability/Disaster Recovery (HA/DR) | Full geo-replication of containers and data, with automatic failover in the event of an issue in any region:<br><br><li>Cosmos DB deployed to multiple regions with active-active read/write<li>Session consistency to assure that user experience is consistent across failover<li>Stateless microservices deployed to multiple regions<li>Health monitoring to detect errors that require failover<li>AKS allows you scaling resources not only vertically but also horizontally, easily and quickly
 | Demonstrates insfrastructure best practices | <li>Application auto-scaling<li>Minimize network latency through geo-based DNS routing<li>API authentication<li>Distributed denial of service (DDoS) protection & mitigation
 | Proves application resiliency through chaos testing | A Chaos Monkey-style solution to shut down different portions of the architecture in order to validate that resilience measures keep everything running in the event of any single failure
