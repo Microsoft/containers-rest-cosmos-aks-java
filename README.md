@@ -66,7 +66,7 @@ As with our OSS technology choices, we intentionally selected a set of Azure tec
 * **Azure DevOps:** Microsoft's CI/CD solution, which is the Azure-branded version of Microsoft's mature and widely used VSTS solution.
 * **Azure Resource Manager (ARM):** Azure's solution for deploying and managing Azure resources via JSON-based templates.
 
-* **Cosmos DB:** Cosmos DB is perhaps the fastest and most reliable NoSQL data storage service in the world. It is an excellent choice when performance and reliability are a must, and when enterprises require multi-region write capabilities, which are essential for both application/service performance and for HA/DR scenarios.
+* **Cosmos DB:** Cosmos DB is Microsoft's globally distributed, horizontally scalable, and highly available NoSQL data storage service. It is an excellent choice when performance and reliability are a must, and when enterprises require multi-region write capabilities, which are essential for both application/service performance and for HA/DR scenarios.
 * **Azure Traffic Manager:** DNS-based routing service to connect users to the nearest data center. Redirects traffic to healthy location when another region goes offline. Also enables recommended method blue-green (aka canary) deployments with Azure App Services.
 * **Azure Monitoring:** It allows to collect granular performance and utilisation data, activity and diagnostics logs, and notifications from your Azure resources in a consistent manner.
 * **Key vault:** Enterprise developers use App Insights to monitor and detect performance anomalies in production applications.
@@ -81,7 +81,7 @@ Key technologies and concepts demonstrated:
 | Benefit | Supporting Solution
 |---|---
 | Common, standard technologies | <li>Java programming language<li>Spring Boot Framework, one of the most widely used frameworks for Java<li>MongoDB NoSQL API (via Azure Cosmos DB)<li>Redis Cache
-| Containerization | Microservices implemented in Docker containers, hosted by the Azure App Service for Containers PaaS service.
+| Containerization | Microservices implemented in Docker containers, hosted by the Azure Kubernetes service.
 | CI/CD pipeline | Continuous integration/continuous delivery (CI/CD) is implemented using Azure DevOps and Gitops with a pipeline of environments that support dev, testing and production
 | Automated deployment | <li>Azure ARM templates<li>App Service for Containers<li>Azure container registry
 | High Availability/Disaster Recovery (HA/DR) | Full geo-replication of containers and data, with automatic failover in the event of an issue in any region:<br><br><li>Cosmos DB deployed to multiple regions with active-active read/write<li>Session consistency to assure that user experience is consistent across failover<li>Stateless microservices deployed to multiple regions<li>Health monitoring to detect errors that require failover<li>AKS allows you scaling resources not only vertically but also horizontally, easily and quickly
